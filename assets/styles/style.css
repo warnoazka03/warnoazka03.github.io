@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+  }
+   
+  body {
+    font-family: 'Quicksand', sans-serif;
+   
+    margin: 0;
+    padding: 0;
+  }
+   
+  h2,
+  h3 {
+    color: #f34378;
+    font-weight: bold;
+  }
+   
+  footer {
+    padding: 10px;
+    color: white;
+    background-color: #020c0edc;
+   
+    text-align: center;
+    font-weight: bold;
+  }
+   
+  nav a {
+    font-size: 20px;
+   
+    font-weight: 400;
+    text-decoration: none;
+   
+    color: white;
+    
+  }
+   
+  nav a:hover {
+    font-weight: bold;
+    color: blue;
+  }
+   
+  .profile header {
+    text-align: center;
+  }
+   
+  .image {
+    width: 60%;
+    max-height: 500px;
+   
+    object-fit: cover;
+    object-position: center;
+  }
+   
+  .profile img {
+    max-width: 200px;
+  }
+   
+  .Oto {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+   
+    padding: 20px;
+  }
+   
+  .Head {
+    font-size: 20px;
+    padding: 50px;
+    background-color: #6a00eb;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+  }
+   
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+   
+    gap: 2rem;
+  }
+   
+  nav li {
+    list-style-type: none;
+    
+  }
+   
+  nav {
+    background-color: #087a52;
+    padding: 10px;
+   
+    position: sticky;
+    top: 0;
+  }
+   
+  main {
+    padding: 20px;
+   
+    display: flex;
+    gap: 1.5rem;
+  }
+   
+  #Keterangan {
+    flex: 5;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 4rem;
+  }
+   
+  aside {
+    flex: 1;
+  }
+   
+  header {
+    display: inline;
+  }
+   
+  /* Perangkat dengan lebar layar 1200px dan di bawahnya */
+  @media screen and (max-width: 1100px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+   
+  /* Perangkat dengan lebar layar 768px dan di bawahnya */
+  @media screen and (max-width: 750px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }
